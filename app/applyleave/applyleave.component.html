@@ -1,0 +1,21 @@
+<p>
+  applyleave works!
+</p>
+<h1>Apply Leave</h1>
+<form #sForm="ngForm" (ngSubmit)="display(sForm)">
+  Enter Emp Id:
+  <input type="number" name="piempid" #emd ="ngModel" ngModel><br> <br>
+  Enter Leave Start Date:
+  <input type="Date" name="sdate" #sdate ="ngModel" ngModel><br> <br>
+  Enter Leave End Date:
+  <input type="Date" name="edate" #edate ="ngModel" ngModel><br> <br>
+  <!-- Enter Leave Applied On:
+  <input type="Date" name="adate" #adate ="ngModel" ngModel><br> <br> -->
+  Enter Leave Type:
+  <input type="text" name="ltype" #ltype ="ngModel" ngModel><br> <br>
+  Enter Leave Reason:
+  <input type="text" name="reason" #reason ="ngModel" ngModel><br> <br>
+  <br>
+  <input type="submit" value="Apply Leave">
+</form>
+{{err}}
